@@ -1,0 +1,16 @@
+type 
+tab=array [0..50] of integer;
+var 
+v2,v1:tab;
+i,n,s:integer;
+begin
+read(n);
+for i from 1 to n do 
+begin
+read(v1[i]);
+read(v2[i]);
+end;
+for i from 1 to  n do 
+s:=s+v1[i]*v2[i];
+if s=0 then write('les deux v sont orthogo');
+end.
